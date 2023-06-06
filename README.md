@@ -164,7 +164,7 @@ K2 is originally from the name of the second-highest mountain in the world, and 
 
 ## Contributors
 
-This project was founded by Acemap at Shanghai Jiao Tong University, including [Cheng Deng](https://github.com/davendw49), [Tianhang Zhang](https://github.com/zthang), [Zhongmou He](https://github.com/twelfth-star), [Qiyuan Chen](), [Yuanyuan Shi](https://github.com/syy-yoyo), [Le Zhou](), supervised by Weinan Zhang, Luoyi Fu, Zhouhan Lin, Junxian He, and Xinbing Wang. The whole project is supported by Chenghu Zhou and the Institute of Geographical Science, Natural Resources Research, Chinese Academy of Sciences, and [Deep-time Digital Earth Big Science Project](https://www.iugs.org/dde). 
+This project was founded by Acemap at Shanghai Jiao Tong University, including [Cheng Deng](https://big-cheng.com/)* (On Job Market!), [Tianhang Zhang](https://github.com/zthang), [Zhongmou He](https://github.com/twelfth-star), [Qiyuan Chen](mailto:q224chen@uwaterloo.ca), [Yuanyuan Shi](https://github.com/syy-yoyo), [Le Zhou](https://github.com/lzhou1998), supervised by Weinan Zhang, Luoyi Fu, Zhouhan Lin, [Junxian He](https://jxhe.github.io/), and Xinbing Wang. The whole project is supported by Chenghu Zhou and the Institute of Geographical Science, Natural Resources Research, Chinese Academy of Sciences, and [Deep-time Digital Earth Big Science Project](https://www.iugs.org/dde). 
 
 
 ## Acknowledgements
