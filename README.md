@@ -76,6 +76,10 @@ model.config.eos_token_id = 2
 
 ## Data
 
+In this repo, we share the instruction data and benchmark data:
+- GeoSignal: `./data/geosignal/`
+- GeoBenchmark: `./data/geobenchmark/`
+
 ### Further pretrain
 
 Our text corpus for further pretraining on LLaMA-7B consists of 3.9 billion tokens from geoscience papers published in selected high-quality journals in earth science and mainly collected by [GAKG](https://gakg.acemap.info/).
