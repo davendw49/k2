@@ -178,7 +178,7 @@ K2 has referred to the following open-source projects. We want to express our gr
 
 K2 is under the support of [Deep-time Digital Earth Big Science Project](https://www.iugs.org/dde).
 
-We would also like to express our appreciation for the effort of data processing from [Yutong Xu](https://github.com/xyt-fe).
+We would also like to express our appreciation for the effort of data processing from [Yutong Xu](https://github.com/xyt-fe) and [Beiya Dai](https://github.com/dbylynn).
 
 ## TO-DO
 - [ ] Release the full version of GeoSignal.
