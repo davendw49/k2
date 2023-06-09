@@ -3,7 +3,7 @@
 <h2>🏔️ Large Language Model for Geoscience</h2>
 </div>
 
-<a href=''><img src='https://img.shields.io/badge/Paper-ArXiv-C71585'></a> <a href='https://huggingface.co/daven3/k2_fp_delta'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Huggingface-delta%20model-red'></a> <a href='https://huggingface.co/daven3/k2_it_adapter'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Huggingface-adapter%20model-red'></img></a> <a href='https://huggingface.co/datasets/daven3/geosignal'><img src='https://img.shields.io/badge/Dataset-GeoSignal-4169E1'></img></a> <a href='https://huggingface.co/datasets/daven3/geobenchmark'><img src='https://img.shields.io/badge/Dataset-GeoBenchmark-4169E1'></img></a>
+<a href='https://arxiv.org/abs/2306.05064'><img src='https://img.shields.io/badge/Paper-ArXiv-C71585'></a> <a href='https://huggingface.co/daven3/k2_fp_delta'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Huggingface-delta%20model-red'></a> <a href='https://huggingface.co/daven3/k2_it_adapter'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Huggingface-adapter%20model-red'></img></a> <a href='https://huggingface.co/datasets/daven3/geosignal'><img src='https://img.shields.io/badge/Dataset-GeoSignal-4169E1'></img></a> <a href='https://huggingface.co/datasets/daven3/geobenchmark'><img src='https://img.shields.io/badge/Dataset-GeoBenchmark-4169E1'></img></a>
 
 Code and data for paper ***"Learning A Foundation Language Model for Geoscience Knowledge Understanding and Utilization"***
 
@@ -192,9 +192,12 @@ k2 is a research preview intended for non-commercial use only, subject to the mo
 If you use the code or data of **k2**, please declare the reference with the following:
 
 ```
-@misc{deng2023k2,
+@misc{deng2023learning,
       title={Learning A Foundation Language Model for Geoscience Knowledge Understanding and Utilization}, 
-      author={Cheng Deng, Tianhang Zhang, Zhongmou He, Qiyuan Chen, Yuanyuan Shi, Le Zhou, Luoyi Fu, Weinan Zhang, Xinbing Wang, Chenghu Zhou, Zhouhan Lin, and Junxian He},
-      year={2023}
+      author={Cheng Deng and Tianhang Zhang and Zhongmou He and Qiyuan Chen and Yuanyuan Shi and Le Zhou and Luoyi Fu and Weinan Zhang and Xinbing Wang and Chenghu Zhou and Zhouhan Lin and Junxian He},
+      year={2023},
+      eprint={2306.05064},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
 }
 ```
