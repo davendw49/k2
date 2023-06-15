@@ -3,7 +3,7 @@
 <h2>🏔️ Large Language Model for Geoscience</h2>
 </div>
 
-<a href='https://arxiv.org/abs/2306.05064'><img src='https://img.shields.io/badge/Paper-ArXiv-C71585'></a> <a href='https://huggingface.co/daven3/k2_fp_delta'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Huggingface-delta%20model-red'></a> <a href='https://huggingface.co/daven3/k2_it_adapter'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Huggingface-adapter%20model-red'></img></a> <a href='https://huggingface.co/datasets/daven3/geosignal'><img src='https://img.shields.io/badge/Dataset-GeoSignal-4169E1'></img></a> <a href='https://huggingface.co/datasets/daven3/geobenchmark'><img src='https://img.shields.io/badge/Dataset-GeoBenchmark-4169E1'></img></a>
+<a href='https://arxiv.org/abs/2306.05064'><img src='https://img.shields.io/badge/Paper-ArXiv-C71585'></a> <a href='https://huggingface.co/daven3/k2_fp_delta'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging Face-delta%20model-red'></a> <a href='https://huggingface.co/daven3/k2_it_adapter'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging Face-adapter%20model-red'></img></a> <a href='https://huggingface.co/datasets/daven3/geosignal'><img src='https://img.shields.io/badge/Dataset-GeoSignal-4169E1'></img></a> <a href='https://huggingface.co/datasets/daven3/geobenchmark'><img src='https://img.shields.io/badge/Dataset-GeoBenchmark-4169E1'></img></a>
 
 - Code and data for paper ***"Learning A Foundation Language Model for Geoscience Knowledge Understanding and Utilization"***
 - Demo: [https://k2.acemap.info](https://k2.acemap.info/) ***host by ourself with intranet penetration (with only 3 threads, with max length as 256)***
@@ -85,7 +85,7 @@ In this repo, we share the instruction data and benchmark data:
 
 Our text corpus for further pretraining on LLaMA-7B consists of 3.9 billion tokens from geoscience papers published in selected high-quality journals in earth science and mainly collected by [GAKG](https://gakg.acemap.info/).
 
-**Delta Model on [Huggingface](https://huggingface.co/): [daven3/k2_fp_delta](https://huggingface.co/daven3/k2_fp_delta)**
+**Delta Model on [Hugging Face](https://huggingface.co/): [daven3/k2_fp_delta](https://huggingface.co/daven3/k2_fp_delta)**
 
 ### Instruction Tuning: GeoSignal
 
@@ -96,15 +96,15 @@ Scientific domain adaptation has two main steps during instruction tuning.
 ***The following is the illustration of the training domain-specific language model recipe:***
 ![recipe](https://big-cheng.com/k2/recipe.png)
 
-- **Adapter Model on [Huggingface](https://huggingface.co/): [daven3/k2_it_adapter](https://huggingface.co/daven3/k2_it_adapter)**
-- **Dataset on [Huggingface](https://huggingface.co/): [geosignal](https://huggingface.co/datasets/daven3/geosignal)**
+- **Adapter Model on [Hugging Face](https://huggingface.co/): [daven3/k2_it_adapter](https://huggingface.co/daven3/k2_it_adapter)**
+- **Dataset on [Hugging Face](https://huggingface.co/): [geosignal](https://huggingface.co/datasets/daven3/geosignal)**
 
 ### Benchmark: GeoBenchmark
 
 In GeoBenchmark, we collect 183 multiple-choice questions in NPEE,
 and 1,395 in AP Test, for objective tasks. Meanwhile, we gather all 939 subjective questions in NPEE to be the subjective tasks set and use 50 to measure the baselines with human evaluation. 
 
-- **Dataset on [Huggingface](https://huggingface.co/): [geobenchmark](https://huggingface.co/datasets/daven3/geobenchmark)**
+- **Dataset on [Hugging Face](https://huggingface.co/): [geobenchmark](https://huggingface.co/datasets/daven3/geobenchmark)**
 
 ## Code
 
