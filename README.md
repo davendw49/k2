@@ -6,7 +6,7 @@
 <a href='https://arxiv.org/abs/2306.05064'><img src='https://img.shields.io/badge/Paper-ArXiv-C71585'></a> <a href='https://huggingface.co/daven3/k2_fp_delta'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging Face-delta%20model-red'></a> <a href='https://huggingface.co/daven3/k2_it_adapter'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging Face-adapter%20model-red'></img></a> <a href='https://huggingface.co/datasets/daven3/geosignal'><img src='https://img.shields.io/badge/Dataset-GeoSignal-4169E1'></img></a> <a href='https://huggingface.co/datasets/daven3/geobenchmark'><img src='https://img.shields.io/badge/Dataset-GeoBenchmark-4169E1'></img></a>
 
 - Code and data for paper ***"Learning A Foundation Language Model for Geoscience Knowledge Understanding and Utilization"***
-- Demo: [https://k2.acemap.info](https://k2.acemap.info/) ***host by ourself with intranet penetration (with only 3 threads, with max length as 256)***
+- Demo: [https://k2.acemap.info](https://k2.acemap.info/) ***host by ourselves on a single GeForce RTX 3090 with intranet penetration (with only three threads, with max length as 256)***
 
 ## Introduction
 
@@ -29,7 +29,7 @@ In this repository, we will share the following code and data.
 
 **1. Prepare the code and the environment**
 
-Clone our repository, creating a Python environment and activate it via the following command
+Clone our repository, create a Python environment, and activate it via the following command
 ```bash
 git clone https://github.com/davendw49/k2.git
 cd k2
@@ -39,7 +39,7 @@ conda activate k2
 
 **2. Prepare the pretrained K2 (GeoLLaMA)**
 
-The current version of K2 consists of two parts: a delta model (like Vicuna), which is an add-on weights towards LLaMA-7B, and an adapter model (trained via PEFT).
+The current version of K2 consists of two parts: a delta model (like Vicuna), an add-on weights towards LLaMA-7B, and an adapter model (trained via PEFT).
 
 |Delta model|Adapter model|
 |:-:|:-:|
@@ -130,13 +130,13 @@ The parameters we use:
 - Zero_optimization_stage: 3
 ```
 
-***Tips: We can not resume smoothly from checkpoints for the limited computing power. Therefore, we did not load the optimizer state dict when resuming training. Even though there are two noticeable spike in the diagram, the performance seems to stay in normal***
+***Tips: We can not resume smoothly from checkpoints for the limited computing power. Therefore, we did not load the optimizer state dict when resuming training. Even though there are two noticeable spikes in the diagram, the performance seems to stay at normal***
 
 ### Instruction tuning
 
 The training script is **`finetune.py`**
 
-- For the first step: alignment with human
+- For the first step: is alignment with human
 ```bash
 python finetune.py --base_model /path/to/checkpoint-30140 --data_path /path/to/alpaca.json --output_dir /path/to/stage/one/model/ --cuda_id 2 --lora_target_modules "q_proj" "k_proj" "v_proj"
 ```
