@@ -62,8 +62,9 @@ class Iteratorize:
         return self
 
     def __next__(self):
-        obj = self.q.get(True, None)
-        if obj is self.sentinel:
+        try:
+            obj = self.q.get(True, None)
+        except queue.Empty:
             raise StopIteration
         else:
             return obj
