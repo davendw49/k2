@@ -7,6 +7,7 @@
 
 - Code and data for paper ***"Learning A Foundation Language Model for Geoscience Knowledge Understanding and Utilization"***
 - Demo: [https://k2.acemap.info](https://k2.acemap.info/) ***host by ourselves on a single GeForce RTX 3090 with intranet penetration (with only three threads, with max length as 256)***
+- A larger language model for Geoscience is on the way!
 
 ## Introduction
 
@@ -159,9 +160,21 @@ python finetune.py --base_model /path/to/checkpoint-30140 --data_path /path/to/g
 - lora target modules: ["q_proj", "k_proj", "v_proj"]
 ```
 
+## Cases
+|Case 1|Case 2|Case 3|
+|-|-|-|
+|![](https://big-cheng.com/k2/case1.png)|![](https://big-cheng.com/k2/case1.png)|![](https://big-cheng.com/k2/case1.png)|
+
+- **Answer and Explain:**
+    - **Question:** What is the most common igneous rock, and introduce it in detail.
+    - **Answer:** Granite is a very common and widely distributed rock type. It is formed by the cooling and crystallization of magma that has been intruded into the Earth's crust. Granite has a coarse-grained texture and is composed of minerals such as quartz, feldspar and mica. The color of granite varies from light pink to dark gray, depending on the mineral composition and the amount of impurities present in the rock.
+- **Answer with comparison:**
+    - **Question:** What are the most economic nickel deposits?
+    - **Answer:** Nickel sulfide ores are by far the world's most economically important source of the metal. They are typically found in ultramafic rocks, such as serpentinites, peridotites, and dunites. These rocks are formed by the partial melting of oceanic crust at mid-oceanic ridges. Nickel-copper-platinum-group-element (Ni-Cu-PGE) orebodies are often associated with mafic intrusions. The most famous deposit of this type is the Sudbury Igneous Complex in Ontario, Canada, which has been mined since the 1880s. Other examples include the
+
 ## Why named K2 ?
 
-K2 is originally from the name of the second-highest mountain in the world, and we believe that in the future, larger and more powerful geoscience language models will be created. What is more, to train a model to shift to a discipline with a significant domain barrier, we have encountered many difficulties *(collecting corpus, clean academic data, computing power, ...)*, which shares with the fact that climbing K2 is no less challenging than Mount Everest🏔️.
+K2 is originally from the name of the second-highest mountain in the world, and we believe that in the future, larger and more powerful geoscience language models will be created. What is more, to train a model to shift to a discipline with a significant domain barrier, we have encountered many difficulties *(collecting corpus, clean academic data, computing power, ...)*, which shares with the fact that climbing K2 is no less challenging than Mount Everest 🏔️.
 
 ## Contributors
 
