@@ -33,7 +33,7 @@ Clone our repository, create a Python environment, and activate it via the follo
 ```bash
 git clone https://github.com/davendw49/k2.git
 cd k2
-conda env create -f k2.yml
+conda env create -f k2.yaml
 conda activate k2
 ```
 
