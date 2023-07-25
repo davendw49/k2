@@ -124,7 +124,9 @@ def apply_delta_low_cpu_mem(base_model_path, target_model_path, delta_path):
 
 def apply_delta(base_model_path, target_model_path, delta_path):
     print(f"Loading the delta weights from {delta_path}")
-    delta_tokenizer = AutoTokenizer.from_pretrained(delta_path, use_fast=False)
+    delta_tokenizer = AutoTokenizer.from_pretrained(base_model_path, use_fast=False)
+    # We didn't upload the tokenizer for the delta model, since it share the same tokenizer as the original Llama, 
+    # therefore, the code of apply_delta.py in line 82 should be changed as follows.
     delta = AutoModelForCausalLM.from_pretrained(
         delta_path, torch_dtype=torch.float16, low_cpu_mem_usage=True
     )
