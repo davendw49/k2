@@ -163,8 +163,11 @@ python finetune.py --base_model /path/to/checkpoint-30140 --data_path /path/to/g
 ## Cases
 |Case 1|Case 2|Case 3|
 |-|-|-|
-|![](https://big-cheng.com/k2/case1.png)|![](https://big-cheng.com/k2/case1.png)|![](https://big-cheng.com/k2/case1.png)|
+|![](https://big-cheng.com/k2/case2.png)|![](https://big-cheng.com/k2/case1.png)|![](https://big-cheng.com/k2/case3.png)|
 
+- **Answer:**
+    - **Question:** What is an IOCG?
+    - **Answer:** Iron-oxide copper-gold (IOCG) deposits are a type of mineral deposit that are formed by the interaction of hydrothermal fluids with igneous rocks. They are characterized by high concentrations of iron oxide, coppermolybdenum, gold, and uranium minerals. Typically, they occur in the form of veins or breccia pipes, but they can also be found as disseminated ores in sedimentary and volcanic rock formations. The formation of these deposites is associated with the intrusion of magma into the Earth's crust, which causes the release of heat and pressure, leading to the separation of ore-forming elements from the surrounding rock. IO
 - **Answer and Explain:**
     - **Question:** What is the most common igneous rock, and introduce it in detail.
     - **Answer:** Granite is a very common and widely distributed rock type. It is formed by the cooling and crystallization of magma that has been intruded into the Earth's crust. Granite has a coarse-grained texture and is composed of minerals such as quartz, feldspar and mica. The color of granite varies from light pink to dark gray, depending on the mineral composition and the amount of impurities present in the rock.
