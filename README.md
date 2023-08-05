@@ -131,7 +131,7 @@ The parameters we use:
 - Zero_optimization_stage: 3
 ```
 
-***Tips: We can not resume smoothly from checkpoints for the limited computing power. Therefore, we did not load the optimizer state dict when resuming training. Even though there are two noticeable spikes in the diagram, the performance seems to stay at normal***
+***Tips: We can not resume smoothly from checkpoints for the limited computing power. Therefore, we did not load the optimizer state dict when resuming training. Even though there are two noticeable spikes in the diagram, the performance seems to stay at normal.***
 
 ### Instruction tuning
 
