@@ -3,7 +3,7 @@
 <h2>🏔️ Large Language Model for Geoscience</h2>
 </div>
 
-<a href='https://arxiv.org/abs/2306.05064'><img src='https://img.shields.io/badge/Paper-ArXiv-C71585'></a> <a href='https://huggingface.co/daven3/k2_fp_delta'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging Face-delta%20model-red'></a> <a href='https://huggingface.co/daven3/k2_it_adapter'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging Face-adapter%20model-red'></img></a> <a href='https://huggingface.co/datasets/daven3/geosignal'><img src='https://img.shields.io/badge/Dataset-GeoSignal-4169E1'></img></a> <a href='https://huggingface.co/datasets/daven3/geobenchmark'><img src='https://img.shields.io/badge/Dataset-GeoBenchmark-4169E1'></img></a>
+<a href='https://arxiv.org/abs/2306.05064'><img src='https://img.shields.io/badge/Paper-ArXiv-C71585'></a> <a href='https://huggingface.co/daven3/k2_fp_delta'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging Face-delta%20model-red'></a> <a href='https://huggingface.co/daven3/k2_it_adapter'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging Face-adapter%20model-red'></img></a> <a href='https://huggingface.co/datasets/daven3/geosignal'><img src='https://img.shields.io/badge/Dataset-GeoSignal-4169E1'></img></a> <a href='https://huggingface.co/datasets/daven3/geobench'><img src='https://img.shields.io/badge/Dataset-GeoBench-4169E1'></img></a>
 
 - Code and data for paper ***"Learning A Foundation Language Model for Geoscience Knowledge Understanding and Utilization"***
 - Demo: [https://k2.acemap.info](https://k2.acemap.info/) ***host by ourselves on a single GeForce RTX 3090 with intranet penetration (with only three threads, with max length as 256)***
@@ -11,14 +11,14 @@
 
 ## Introduction
 
-We introduce **K2** (7B), an open-source language model trained by firstly further pretraining LLaMA on collected and cleaned geoscience literature, including geoscience open-access papers and Wikipedia pages, and secondly fine-tuning with knowledge-intensive instruction tuning data (GeoSignal). As for preliminary evaluation, we use GeoBenchmark (consisting of NPEE and AP Test on Geology, Geography, and Environmental Science) as the benchmark. K2 outperforms the baselines on objective and subjective tasks compared to several baseline models with similar parameters. 
+We introduce **K2** (7B), an open-source language model trained by firstly further pretraining LLaMA on collected and cleaned geoscience literature, including geoscience open-access papers and Wikipedia pages, and secondly fine-tuning with knowledge-intensive instruction tuning data (GeoSignal). As for preliminary evaluation, we use GeoBench (consisting of NPEE and AP Test on Geology, Geography, and Environmental Science) as the benchmark. K2 outperforms the baselines on objective and subjective tasks compared to several baseline models with similar parameters. 
 In this repository, we will share the following code and data.
 
 - We release K2 weights in two parts (one can add our delta to the original LLaMA weights and use `peft_model` with `transformers` to obtain the entire K2 model.)
     - Delta weights after further pretraining with the geoscience text corpus to comply with the LLaMA model license. 
     - Adapter model weights trained by PEFT (LoRA).
 - We release the core data of GeoSignal under the constraint of [DDE](https://deep-time.org/); if you want the full version of GeoSignal, you can [email](mailto:davendw@sjtu.edu.cn) the author for further cooperation.
-- We release the GeoBenchmark, the first-ever benchmark for the evaluation of the capability of LLMs in geoscience.
+- We release the GeoBench, the first-ever benchmark for the evaluation of the capability of LLMs in geoscience.
 - We release the code of further pretrain and instruction tuning of K2.
 
 ***The following is the overview of training K2:***
@@ -80,7 +80,7 @@ model.config.eos_token_id = 2
 
 In this repo, we share the instruction data and benchmark data:
 - GeoSignal: `./data/geosignal/`
-- GeoBenchmark: `./data/geobenchmark/`
+- GeoBench: `./data/geobench/`
 
 ### Further pretrain
 
@@ -100,12 +100,12 @@ Scientific domain adaptation has two main steps during instruction tuning.
 - **Adapter Model on [Hugging Face](https://huggingface.co/): [daven3/k2_it_adapter](https://huggingface.co/daven3/k2_it_adapter)**
 - **Dataset on [Hugging Face](https://huggingface.co/): [geosignal](https://huggingface.co/datasets/daven3/geosignal)**
 
-### Benchmark: GeoBenchmark
+### Benchmark: GeoBench
 
-In GeoBenchmark, we collect 183 multiple-choice questions in NPEE,
+In GeoBench, we collect 183 multiple-choice questions in NPEE,
 and 1,395 in AP Test, for objective tasks. Meanwhile, we gather all 939 subjective questions in NPEE to be the subjective tasks set and use 50 to measure the baselines with human evaluation. 
 
-- **Dataset on [Hugging Face](https://huggingface.co/): [geobenchmark](https://huggingface.co/datasets/daven3/geobenchmark)**
+- **Dataset on [Hugging Face](https://huggingface.co/): [geobench](https://huggingface.co/datasets/daven3/geobench)**
 
 ## Code
 
@@ -200,10 +200,10 @@ We would also like to express our appreciation for the effort of data processing
 ## TO-DO
 - [ ] Series of applications with K2.
 - [ ] Release the full version of GeoSignal.
-- [ ] Release the evaluation code over GeoBenchmark.
+- [ ] Release the evaluation code over GeoBench.
 
 ## License
-K2 is a research preview intended for non-commercial use only, subject to the model License of LLaMA and the Terms of Use of the data generated by OpenAI. Please contact us if you find any potential violations. The code is released under the Apache License 2.0. The data GeoSignal and GeoBenchmark is updating occasionally, if you want to subscribe the data, you can emaill us [davendw@sjtu.edu.cn](mailto:davendw@sjtu.edu.cn).
+K2 is a research preview intended for non-commercial use only, subject to the model License of LLaMA and the Terms of Use of the data generated by OpenAI. Please contact us if you find any potential violations. The code is released under the Apache License 2.0. The data GeoSignal and GeoBench is updating occasionally, if you want to subscribe the data, you can emaill us [davendw@sjtu.edu.cn](mailto:davendw@sjtu.edu.cn).
 
 ## Citation [ArXiv](https://arxiv.org/abs/2306.05064)
 If you use the code or data of **K2**, please declare the reference with the following:
