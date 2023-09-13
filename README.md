@@ -7,7 +7,8 @@
 
 - Code and data for paper ***"Learning A Foundation Language Model for Geoscience Knowledge Understanding and Utilization"***
 - Demo: [https://k2.acemap.info](https://k2.acemap.info/) ***host by ourselves on a single GeForce RTX 3090 with intranet penetration (with only three threads, with max length as 256)***
-- A larger language model for Geoscience is on the way!
+- A larger language model for Geoscience as a foundation model for academic copilot is [geogalactica](https://github.com/geobrain-ai/geogalactica)!
+- The data pre-processing toolkits will be open sourced soon!
 
 ## Introduction
 
