@@ -256,14 +256,4 @@ if 'npee' in benchmark or 'kaoyan' in benchmark:
         f.write(f'Correct rate (choice, without "the answer is ", {model}) is {correct_rate_woa}' + '\n')
         f.write(f'Correct rate (choice, random) is {correct_rate_random}' + '\n')
 
-if 'npee' in benchmark or 'kaoyan' in benchmark or 're' in benchmark:
-    tf_softmax_wa = softmax['tf']['wa'] if 'tf' in softmax else []
-    tf_softmax_woa = softmax['tf']['woa'] if 'tf' in softmax else []
-    tf_res_wa, tf_correct_rate_wa= process_tf(f'{base_benchmark_path}benchmark_{benchmark}.json', tf_softmax_wa)
-    tf_res_woa, tf_correct_rate_woa= process_tf(f'{base_benchmark_path}benchmark_{benchmark}.json', tf_softmax_woa)
-    with open(f"./results/{model.replace('-', '_')}_result_on_{benchmark}.txt", 'a') as f:
-        f.write(f'Correct rate (tf, with "the answer is ", {model}) is {tf_correct_rate_wa}' + '\n')
-        f.write(f'Correct rate (tf, without "the answer is ", {model}) is {tf_correct_rate_woa}' + '\n')
-        f.write(f'Correct rate (tf, random) is 0.5' + '\n')
-
 print('Finished!')

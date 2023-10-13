@@ -191,7 +191,7 @@ if __name__ == "__main__":
     # tokenizer.pad_token_id = -1
     print('Model loaded.')
     
-    with open(f'./benchmarks/source_target_{args.geobenchmark}.json', 'r') as f:
+    with open(f'../data/geobench/{args.geobenchmark}.json', 'r') as f:
         source_target = json.load(f)
 
     

@@ -1,0 +1,55 @@
+### Instruction:
+Identify the choice that best completes the statement or answers the question.
+The Christian religion in South America first spread by
+Choose from:
+A. stimulus diffusion
+B. relocation diffusion
+C. contagious diffusion
+D. hierarchical diffusion
+
+### Response:
+The answer is:
+B
+
+
+### Instruction:
+Identify the choice that best completes the statement or answers the question.
+Chinatown is an example of a
+Choose from:
+A. functional region
+B. nodal region
+C. perceptual region
+D. formal region
+
+### Response:
+The answer is:
+C
+
+
+### Instruction:
+Identify the choice that best completes the statement or answers the question.
+The practice of shifting cultivation is
+Choose from:
+A. commercial agriculture
+B. agribusiness
+C. found primarily in the tundra regions
+D. slash and burn agriculture
+
+### Response:
+The answer is:
+D
+
+
+### Instruction:
+Identify the choice that best completes the statement or answers the question.
+Which one of the following statements is a law of migration
+Choose from:
+A. Every migration flow creates a return or counter migration
+B. Most migration is urban to rural
+C. Most migrants move a great distance
+D. Most migrants consist of families
+
+### Response:
+The answer is:
+A
+
