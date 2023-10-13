@@ -176,6 +176,10 @@ python finetune.py --base_model /path/to/checkpoint-30140 --data_path /path/to/g
     - **Question:** What are the most economic nickel deposits?
     - **Answer:** Nickel sulfide ores are by far the world's most economically important source of the metal. They are typically found in ultramafic rocks, such as serpentinites, peridotites, and dunites. These rocks are formed by the partial melting of oceanic crust at mid-oceanic ridges. Nickel-copper-platinum-group-element (Ni-Cu-PGE) orebodies are often associated with mafic intrusions. The most famous deposit of this type is the Sudbury Igneous Complex in Ontario, Canada, which has been mined since the 1880s. Other examples include the
 
+## Evaluation
+
+We share the original evaluation code in [evaluation folder](https://github.com/davendw49/k2/tree/main/evaluation), and we will release **Geo-Eval** in the near future with more evaluation methods.
+
 ## Why named K2 ?
 
 K2 is originally from the name of the second-highest mountain in the world, and we believe that in the future, larger and more powerful geoscience language models will be created. What is more, to train a model to shift to a discipline with a significant domain barrier, we have encountered many difficulties *(collecting corpus, clean academic data, computing power, ...)*, which shares with the fact that climbing K2 is no less challenging than Mount Everest 🏔️.
