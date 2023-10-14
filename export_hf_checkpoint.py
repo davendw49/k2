@@ -33,7 +33,7 @@ lora_weight = lora_model.base_model.model.model.layers[
     0
 ].self_attn.q_proj.weight
 
-assert torch.allclose(first_weight_old, first_weight)
+assert torch.equal(first_weight_old, first_weight)
 
 # merge weights - new merging method from peft
 lora_model = lora_model.merge_and_unload()
@@ -41,7 +41,7 @@ lora_model = lora_model.merge_and_unload()
 lora_model.train(False)
 
 # did we do anything?
-assert not torch.allclose(first_weight_old, first_weight)
+assert not torch.equal(first_weight_old, first_weight)
 
 lora_model_sd = lora_model.state_dict()
 deloreanized_sd = {
