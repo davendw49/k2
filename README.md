@@ -215,8 +215,8 @@ If you use the code or data of **K2**, please declare the reference with the fol
 
 ```
 @misc{deng2023learning,
-      title={Learning A Foundation Language Model for Geoscience Knowledge Understanding and Utilization}, 
-      author={Cheng Deng and Tianhang Zhang and Zhongmou He and Qiyuan Chen and Yuanyuan Shi and Le Zhou and Luoyi Fu and Weinan Zhang and Xinbing Wang and Chenghu Zhou and Zhouhan Lin and Junxian He},
+      title={K2: A Foundation Language Model for Geoscience Knowledge Understanding and Utilization}, 
+      author={Cheng Deng and Tianhang Zhang and Zhongmou He and Yi Xu and Qiyuan Chen and Yuanyuan Shi and Luoyi Fu and Weinan Zhang and Xinbing Wang and Chenghu Zhou and Zhouhan Lin and Junxian He},
       year={2023},
       eprint={2306.05064},
       archivePrefix={arXiv},
