@@ -5,6 +5,7 @@
 
 <a href='https://arxiv.org/abs/2306.05064'><img src='https://img.shields.io/badge/Paper-ArXiv-C71585'></a> <a href='https://huggingface.co/daven3/k2_fp_delta'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging Face-delta%20model-red'></a> <a href='https://huggingface.co/daven3/k2_it_adapter'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging Face-adapter%20model-red'></img></a> <a href='https://huggingface.co/datasets/daven3/geosignal'><img src='https://img.shields.io/badge/Dataset-GeoSignal-4169E1'></img></a> <a href='https://huggingface.co/datasets/daven3/geobench'><img src='https://img.shields.io/badge/Dataset-GeoBench-4169E1'></img></a>
 
+- The paper ***"K2: A Foundation Language Model for Geoscience Knowledge Understanding and Utilization"*** has been accepted by WSDM2024, in Mexico!
 - Code and data for paper ***"K2: A Foundation Language Model for Geoscience Knowledge Understanding and Utilization"***
 - Demo: [https://k2.acemap.info](https://k2.acemap.info/) ***host by ourselves on a single GeForce RTX 3090 with intranet penetration (with only three threads, with max length as 256)***
 - A larger language model for Geoscience as a foundation model for academic copilot is [geogalactica](https://github.com/geobrain-ai/geogalactica)!
