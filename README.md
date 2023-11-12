@@ -14,7 +14,7 @@
 
 ## Introduction
 
-We introduce **K2** (7B), an open-source language model trained by firstly further pretraining LLaMA on collected and cleaned geoscience literature, including geoscience open-access papers and Wikipedia pages, and secondly fine-tuning with knowledge-intensive instruction tuning data (GeoSignal). As for preliminary evaluation, we use GeoBench (consisting of NPEE and AP Test on Geology, Geography, and Environmental Science) as the benchmark. K2 outperforms the baselines on objective and subjective tasks compared to several baseline models with similar parameters. 
+We introduce **K2** (7B), an open-source language model trained by firstly further pretraining LLaMA on collected and cleaned geoscience literature, including geoscience open-access papers and Wikipedia pages, and secondly fine-tuning with knowledge-intensive instruction tuning data (GeoSignal). As for preliminary evaluation, we use GeoBench (consisting of NPEE and AP Test on Geology, Geography, and Environmental Science) as the benchmark. K2 outperforms the baselines on objectiv e and subjective tasks compared to several baseline models with similar parameters. 
 In this repository, we will share the following code and data.
 
 - We release K2 weights in two parts (one can add our delta to the original LLaMA weights and use `peft_model` with `transformers` to obtain the entire K2 model.)
