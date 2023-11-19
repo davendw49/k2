@@ -102,10 +102,10 @@ def translate_state_dict_key(k):  # noqa: C901
             return None
         else:
             print(layer, k)
-            raise NotImplementedError
+            raise NotImplementedError(f"Unrecognized key: {k}")
     else:
         print(k)
-        raise NotImplementedError
+        raise NotImplementedError(f"Unrecognized key: {k}")
 
 
 new_state_dict = {}
