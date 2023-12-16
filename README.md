@@ -8,9 +8,9 @@
 - The paper ***"K2: A Foundation Language Model for Geoscience Knowledge Understanding and Utilization"*** has been accepted by WSDM2024, in Mexico!
 - Code and data for paper ***"K2: A Foundation Language Model for Geoscience Knowledge Understanding and Utilization"***
 - Demo: [http://geoinfocn.com/](http://geoinfocn.com/) ***host by ourselves on a single GeForce RTX A10 with intranet penetration (with only three threads, with max length as 512)***
-- Demo: [https://k2.acemap.info](https://k2.acemap.info/) ***host by ourselves on a single GeForce RTX 3090 with intranet penetration (with only three threads, with max length as 512)***
+- Demo: [[https://k2.acemap.info](http://k2.geoinfocn.com/)](https://k2.acemap.info/) ***host by ourselves on a single GeForce RTX 3090 with intranet penetration (with only three threads, with max length as 512)***
 - A larger language model for Geoscience as a foundation model for academic copilot is [geogalactica](https://github.com/geobrain-ai/geogalactica)!
-- The data pre-processing toolkits are open sourced on [sciparser](https://github.com/davendw49/sciparser)!
+- The data pre-processing toolkits are open-sourced on [sciparser](https://github.com/davendw49/sciparser)!
 
 ## Introduction
 
@@ -43,7 +43,7 @@ conda activate k2
 
 **2. Prepare the pretrained K2 (GeoLLaMA)**
 
-The current version of K2 consists of two parts: a delta model (like Vicuna), an add-on weights towards LLaMA-7B, and an adapter model (trained via PEFT).
+The current version of K2 consists of two parts: a delta model (like Vicuna), an add-on weight towards LLaMA-7B, and an adapter model (trained via PEFT).
 
 |Delta model|Adapter model|
 |:-:|:-:|
