@@ -3,7 +3,7 @@
 <h2>🏔️ Large Language Model for Geoscience</h2>
 </div>
 
-<a href='https://arxiv.org/abs/2306.05064'><img src='https://img.shields.io/badge/Paper-ArXiv-C71585'></a> <a href='https://huggingface.co/daven3/k2_fp_delta'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging Face-delta%20model-red'></a> <a href='https://huggingface.co/daven3/k2_it_adapter'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging Face-adapter%20model-red'></img></a> <a href='https://huggingface.co/datasets/daven3/geosignal'><img src='https://img.shields.io/badge/Dataset-GeoSignal-4169E1'></img></a> <a href='https://huggingface.co/datasets/daven3/geobench'><img src='https://img.shields.io/badge/Dataset-GeoBench-4169E1'></img></a>
+<a href='https://arxiv.org/abs/2306.05064'><img src='https://img.shields.io/badge/Paper-ArXiv-C71585'></a> <a href='https://huggingface.co/daven3/k2_fp_delta'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging Face-delta%20model-red'></a> <a href='https://huggingface.co/daven3/k2-v1'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging Face-k2%20v1-red'></a> <a href='https://huggingface.co/daven3/k2_it_adapter'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging Face-adapter%20model-red'></img></a> <a href='https://huggingface.co/datasets/daven3/geosignal'><img src='https://img.shields.io/badge/Dataset-GeoSignal-4169E1'></img></a> <a href='https://huggingface.co/datasets/daven3/geobench'><img src='https://img.shields.io/badge/Dataset-GeoBench-4169E1'></img></a>
 
 - The paper ***"K2: A Foundation Language Model for Geoscience Knowledge Understanding and Utilization"*** has been accepted by WSDM2024, in Mexico!
 - Code and data for paper ***"K2: A Foundation Language Model for Geoscience Knowledge Understanding and Utilization"***
@@ -43,11 +43,12 @@ conda activate k2
 
 **2. Prepare the pretrained K2 (GeoLLaMA)**
 
-The current version of K2 consists of two parts: a delta model (like Vicuna), an add-on weight towards LLaMA-7B, and an adapter model (trained via PEFT).
+The current version of K2 is on Huggingface [Model](https://huggingface.co/daven3/k2-v1)
+The previous version of K2 consists of two parts: a delta model (like Vicuna), an add-on weight towards LLaMA-7B, and an adapter model (trained via PEFT).
 
-|Delta model|Adapter model|
-|:-:|:-:|
- [k2_fp_delta](https://huggingface.co/daven3/k2_fp_delta)|[k2_it_adapter](https://huggingface.co/daven3/k2_it_adapter)|
+|Delta model|Adapter model|Full model|
+|:-:|:-:|:-:|
+ [k2_fp_delta](https://huggingface.co/daven3/k2_fp_delta)|[k2_it_adapter](https://huggingface.co/daven3/k2_it_adapter)|[k2_v1](https://huggingface.co/daven3/k2-v1)|
 
 - **Referring to the repo of Vicuna, we share the command of building up the pretrained weighted of K2**
 ```bash
@@ -58,6 +59,21 @@ python -m apply_delta --base /path/to/weights/of/llama --target /path/to/weights
 Coming soon...
 
 **3. Use K2**
+```python
+base_model = /path/to/k2
+tokenizer = LlamaTokenizer.from_pretrained(base_model)
+model = LlamaForCausalLM.from_pretrained(
+    base_model,
+    load_in_8bit=load_8bit,
+    device_map=device_map
+    torch_dtype=torch.float16
+)
+model.config.pad_token_id = tokenizer.pad_token_id = 0
+model.config.bos_token_id = 1
+model.config.eos_token_id = 2
+```
+
+Or, alternatively,
 
 ```python
 base_model = /path/to/geollama
