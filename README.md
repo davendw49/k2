@@ -1,6 +1,6 @@
 <div style="text-align:center">
 <img src="https://big-cheng.com/k2/k2.png" alt="k2-logo" width="200"/>
-<h2>🏔️ Large Language Model for Geoscience</h2>
+<h2>🏔️ K2 (GeoLLaMA) Large Language Model for Geoscience</h2>
 </div>
 
 <a href='https://arxiv.org/abs/2306.05064'><img src='https://img.shields.io/badge/Paper-ArXiv-C71585'></a> <a href='https://huggingface.co/daven3/k2_fp_delta'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging Face-delta%20model-red'></a> <a href='https://huggingface.co/daven3/k2-v1'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging Face-k2%20v1-red'></a> <a href='https://huggingface.co/daven3/k2_it_adapter'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging Face-adapter%20model-red'></img></a> <a href='https://huggingface.co/datasets/daven3/geosignal'><img src='https://img.shields.io/badge/Dataset-GeoSignal-4169E1'></img></a> <a href='https://huggingface.co/datasets/daven3/geobench'><img src='https://img.shields.io/badge/Dataset-GeoBench-4169E1'></img></a>
