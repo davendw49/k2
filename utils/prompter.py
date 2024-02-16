@@ -25,6 +25,9 @@ class Prompter(object):
                 f"Using prompt template {template_name}: {self.template['description']}"
             )
 
+    def __repr__(self):
+        return f"Prompter(template_name={self.template_name}, verbose={self.verbose})"
+
     def generate_prompt(
         self,
         instruction: str,
@@ -48,4 +51,15 @@ class Prompter(object):
         return res
 
     def get_response(self, output: str) -> str:
-        return output.split(self.template["response_split"])[1].strip()
+        """
+        Returns the response from the output string.
+
+        Args:
+            output: The output string from the prompt.
+
+        Returns:
+            The response string.
+        """
+        response = output.split(self.template["response_split"])[1].strip()
+        return response
+
