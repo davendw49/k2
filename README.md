@@ -19,7 +19,7 @@ In this repository, we will share the following code and data.
 - We release K2 weights in two parts (one can add our delta to the original LLaMA weights and use `peft_model` with `transformers` to obtain the entire K2 model.)
     - Delta weights after further pretraining with the geoscience text corpus to comply with the LLaMA model license. 
     - Adapter model weights trained by PEFT (LoRA).
-- We release the core data of GeoSignal under the constraint of [DDE](https://deep-time.org/); if you want the full version of GeoSignal, you can [email](mailto:davendw@sjtu.edu.cn) the author for further cooperation.
+- We release the core data of GeoSignal that K2 used for the training.
 - We release the GeoBench, the first-ever benchmark for the evaluation of the capability of LLMs in geoscience.
 - We release the code of further pretrain and instruction tuning of K2.
 
@@ -206,7 +206,7 @@ K2 is originally from the name of the second-highest mountain in the world, and 
 
 ## Contributors
 
-This project was founded by Acemap at Shanghai Jiao Tong University, including [Cheng Deng](https://big-cheng.com/), [Tianhang Zhang](https://github.com/zthang), [Zhongmou He](https://github.com/twelfth-star), [Qiyuan Chen](mailto:q224chen@uwaterloo.ca), [Yuanyuan Shi](https://github.com/syy-yoyo), [Le Zhou](https://github.com/lzhou1998), supervised by Weinan Zhang, Luoyi Fu, Zhouhan Lin, [Junxian He](https://jxhe.github.io/), and Xinbing Wang. The whole project is supported by **Chenghu Zhou** and the Institute of Geographical Science, Natural Resources Research, Chinese Academy of Sciences, and [Deep-time Digital Earth Big Science Project](https://www.iugs.org/dde). 
+This project was founded by Acemap at Shanghai Jiao Tong University, including [Cheng Deng](https://big-cheng.com/), [Tianhang Zhang](https://github.com/zthang), [Zhongmou He](https://github.com/twelfth-star), [Qiyuan Chen](mailto:q224chen@uwaterloo.ca), [Yuanyuan Shi](https://github.com/syy-yoyo), [Le Zhou](https://github.com/lzhou1998), supervised by Weinan Zhang, Luoyi Fu, Zhouhan Lin, [Junxian He](https://jxhe.github.io/), and Xinbing Wang. The whole project is supported by **Chenghu Zhou** and the Institute of Geographical Science, Natural Resources Research, Chinese Academy of Sciences.
 
 
 ## Acknowledgements
@@ -218,7 +218,7 @@ K2 has referred to the following open-source projects. We want to express our gr
 - alpaca-lora by @tloen: https://github.com/tloen/alpaca-lora
 - alpaca-gp4 by Chansung Park: https://github.com/tloen/alpaca-lora/issues/340
 
-K2 is under the support of **Chenghu Zhou** and the Institute of Geographical Science, Natural Resources Research, Chinese Academy of Sciences, and [Deep-time Digital Earth Big Science Project](https://www.iugs.org/dde).
+K2 is under the support of **Chenghu Zhou** and the Institute of Geographical Science, Natural Resources Research, Chinese Academy of Sciences.
 
 We would also like to express our appreciation for the effort of data processing from [Yutong Xu](https://github.com/xyt-fe) and [Beiya Dai](https://github.com/dbylynn).
 
